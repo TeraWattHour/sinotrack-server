@@ -1,0 +1,15 @@
+[package]
+name = "h02-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.97"
+chrono = "0.4.40"
+env_logger = "0.11.8"
+log = "0.4.27"
+sqlx = { version = "0.8.3", features = ["chrono", "mysql", "runtime-tokio"] }
+tokio = { version = "1.44.2", features = ["full"] }
+
+[features]
+linux = []
