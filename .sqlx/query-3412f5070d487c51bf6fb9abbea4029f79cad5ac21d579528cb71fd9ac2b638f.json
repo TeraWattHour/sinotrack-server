@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "update readings set obtained_at = ?, battery = ? where id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "3412f5070d487c51bf6fb9abbea4029f79cad5ac21d579528cb71fd9ac2b638f"
+}

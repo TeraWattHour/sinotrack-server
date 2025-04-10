@@ -1,0 +1,34 @@
+{
+  "db_name": "MySQL",
+  "query": "select id, ST_Equals(location, ST_GeomFromText(?)) as same_location from readings where device_id = ? and obtained_at > ? order by obtained_at desc limit 1",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": {
+          "type": "Long",
+          "flags": "NOT_NULL | PRIMARY_KEY | AUTO_INCREMENT",
+          "max_size": 11
+        }
+      },
+      {
+        "ordinal": 1,
+        "name": "same_location",
+        "type_info": {
+          "type": "Long",
+          "flags": "BINARY",
+          "max_size": 1
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": [
+      false,
+      true
+    ]
+  },
+  "hash": "2130ebd583ff1414e14a18cdb0f974d4886222331fda44335b949828d5724791"
+}

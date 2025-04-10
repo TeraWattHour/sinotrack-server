@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "delete from readings where id = ?",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": []
+  },
+  "hash": "eea700f4cf3540071081cab3d445cd6bcd907f781d28063ababda5d6a3fd55e9"
+}

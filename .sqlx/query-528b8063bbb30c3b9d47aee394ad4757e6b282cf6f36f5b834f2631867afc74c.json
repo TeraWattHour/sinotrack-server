@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "insert into readings(device_id, obtained_at, location, battery) values (?, ?, ST_GeomFromText(?), ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "528b8063bbb30c3b9d47aee394ad4757e6b282cf6f36f5b834f2631867afc74c"
+}
